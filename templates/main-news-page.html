@@ -1,0 +1,184 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <section class="left-side-bar">
+                <p>SECTIONS</p>
+                <div>
+                    <ul class="left-side-bar-ul">
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">language</i>
+                                <span>Top Stories</span>
+                            </li>
+                        </a>
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">language</i>
+                                <span>World</span>
+                            </li>
+                        </a>
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">flag</i>
+                                <span>U.S</span>
+                            </li>
+                        </a>
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">business</i>
+                                <span>Business</span>
+                            </li>
+                        </a>
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">memory</i>
+                                <span>Technology</span>
+                            </li>
+                        </a>
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">theaters</i>
+                                <span>Entertainment</span>
+                            </li>
+                        </a>
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">&#xE52F;</i>
+                                <span>Sports</span>
+                            </li>
+                        </a>
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">language</i>
+                                <span>Science</span>
+                            </li>
+                        </a>
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">&#xEB43;</i>
+                                <span>Health</span>
+                            </li>
+                        </a>
+                        <hr>
+                        <a class="side-bar-link" href="#">
+                            <li>
+                                <i class="material-icons">&#xE150;</i>
+                                <span>Manage Section</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-10">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h4>Top stories</h4>
+                </div>
+                <div class="col-sm-4">
+                    <h5>In The News</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-12" ng-repeat="news in newsData">
+                            <article class="news-articles">
+                                <div class="row">
+                                    <div class="col-sm-3 news-img">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img class="news-article-image" ng-src="{{news.img_url}}" alt="news image">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                {{news.sub_title}}
+                                                <a href="#">
+                                                    <div class="related-topics" ng-repeat="relatedTopics in news.more_about"> {{relatedTopics}} </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9 news-content">
+                                        <a href="#">
+                                            <h4 class="main-title"> {{news.title}} </h4>
+                                        </a>
+                                        <span class="channel"> {{news.channel}} </span>
+                                        <span class="time"> {{news.time}} </span>
+                                        <div class="sub-news" ng-repeat="subNews in news.sub_part">
+                                            <a href="#">
+                                                <h5 class="sub-title"> {{subNews.title}} </h5>
+                                                <span class="channel"> {{subNews.channel}} </span>
+                                                <span class="time"> {{subNews.time}} </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-12 in-the-news-div">
+                            <aside class="in-the-news">
+                                <a href="#">
+                                    <div>Syria</div>
+                                </a>
+                                <a href="#">
+                                    <div>Donald Trump</div>
+                                </a>
+                                <a href="#">
+                                    <div>Bashar al-Assad</div>
+                                </a>
+                                <a href="#">
+                                    <div>Michael Cohen</div>
+                                </a>
+                                <a href="#">
+                                    <div>Kentucky</div>
+                                </a>
+                                <a href="#">
+                                    <div>Starbuck</div>
+                                </a>
+                                <a href="#">
+                                    <div>NASDAQ:SBUX</div>
+                                </a>
+                                <a href="#">
+                                    <div>Matt Bevin</div>
+                                </a>
+                                <a href="#">
+                                    <div>NASDAQ</div>
+                                </a>
+                                <a href="#">
+                                    <div>Stormy Daniels</div>
+                                </a>
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="recent-heading">Recent</h4>
+                            <div class="recent">
+                                <div class="recent-div">
+                                    <p>
+                                        <a href="">'Boiled frog syndrome': Germany's China problem</a>
+                                    </p>
+                                    <span>Reuters</span>
+                                    <span> 26m ago</span>
+                                </div>
+                                <div class="recent-div">
+                                    <p>
+                                        <a href="#">Ben Stiller, Robert De Niro drop by 'SNL' to take aim at Trump's lawyer</a>
+                                    </p>
+                                    <span>NBCNews.com</span>
+                                    <span> 27m ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

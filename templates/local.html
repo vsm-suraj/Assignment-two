@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-sm-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <section class="left-side-bar">
+                    <p>SECTIONS</p>
+                    <div>
+                        <ul class="left-side-bar-ul">
+                            <a class="side-bar-link" href="#">
+                                <li>
+                                    <i class="material-icons">gps_fixed</i>
+                                    <span>Bengalure</span>
+                                </li>
+                            </a>
+                            <div class="hr-line"></div>
+                            <a class="side-bar-link" href="#">
+                                <li>
+                                    <i class="material-icons">language</i>
+                                    <span>Manage Location</span>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-12 local-news-articles" ng-repeat="localNews in localNewsData">
+                <div class="row">
+                    <div class="col-sm-4 local-news-image">
+                        <img ng-src="{{localNews.img_url}}" alt="local news image">
+                    </div>
+                    <div class="col-sm-8 local-news-titles">
+                        <a href="#">
+                            <h4> {{localNews.title}} </h4>
+                        </a>
+                        <span> {{localNews.channel}} </span>
+                        <span> {{localNews.time}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="col-sm-12 weather">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Today</p>
+                    <img src="https://www.gstatic.com/images/icons/material/apps/weather/1x/partly_cloudy_light_color_32dp.png" alt="Clear with periodic clouds">
+                    <p>95° 72°</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Wed</p>
+                    <img src="https://www.gstatic.com/images/icons/material/apps/weather/1x/partly_cloudy_light_color_32dp.png" alt="Partly Cloudy">
+                    <p>95° 71°</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Thu</p>
+                    <img src="https://www.gstatic.com/images/icons/material/apps/weather/1x/isolated_scattered_tstorms_day_light_color_32dp.png" alt="Scattered Thunderstorms">
+                    <p>93° 71°</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+[{
+
+        "img_url": "img/hqdefault.jpg",
+        "title": "After Syrian airstrikes comes finger-pointing and condemnation",
+        "channel": "CNN",
+        "time": "3h ago",
+        "sub_title": "",
+        "sub_part": [{
+                "title": "Syria air strikes: US still 'locked and loaded' for new chemical attacks",
+                "channel": "BBC News",
+                "feature": "",
+                "time": "5h ago"
+            },
+            {
+                "title": "PHOTOS: 2 Syrian Chemical Weapons Sites Before And After Missile Strikes",
+                "channel": "NPR",
+                "feature": "",
+                "time": "2h ago"
+            },
+            {
+                "title": "Syrian State TV Shows Suspected Chemical Weapons Lab Hit By Air Strikes",
+                "channel": "Featured LADbible",
+                "feature": "",
+                "time": "15h ago"
+            },
+            {
+                "title": "The US attack on Syria is completely legal and utterly moral. Here's what Trump's critics need to know Opinion",
+                "channel": "Fox News",
+                "feature": "",
+                "time": "3h ago"
+            }
+        ],
+        "more_about": ["Syria", "Donald Trump", "Bashar al-Assad"]
+    },
+    {
+        "img_url": "img/hqdefault(1).jpg",
+        "title": "Starbucks, Police And Mayor Respond To Controversial Arrest Of 2 Black Men In Philly",
+        "channel": "NPR",
+        "time": "1h ago",
+        "sub_title": "RELATED COVERAGE",
+        "sub_part": [{
+            "title": "Starbucks Corporation - SBUX - Stock Price Today - Zacks",
+            "feature": "Most Referenced",
+            "channel": "Zacks",
+            "time": "2h ago"
+        }],
+        "more_about": ""
+    },
+    {
+        "img_url": "img/hqdefault(2).jpg",
+        "title": "Hundreds rally at Maine Capitol in support of gun rights",
+        "channel": "ABC News",
+        "time": "7h ago",
+        "sub_title": "",
+        "sub_part": [],
+        "more_about": ""
+    }
+]
